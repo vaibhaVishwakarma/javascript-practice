@@ -48,3 +48,22 @@ const MyFunc = () => {
 MyFunc; // nothing happens 
 MyFunc(); // function runs
 console.log(typeof(MyFunc)) // return function <- actually it is object function
+
+
+
+console.table(["heap <- reference" , "stack <- copy"]);
+
+let var1 = "ankit";
+let var2 = "pratik";
+var2 = "tushar";
+console.log("\nstack");
+console.log({"var1":var1,"var2":var2})
+
+let dict1 = {
+    username :"reet",
+    email:"reet@vit.com"
+}
+let dict2= dict1;
+dict2.email="reet@google.com"
+console.log("\n heap")
+console.table([dict1 , dict2])
