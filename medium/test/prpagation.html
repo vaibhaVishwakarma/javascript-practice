@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- open in browser -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+    }
+</style>
+<body style="background-color:#323232; color:#487918">
+    
+    
+    <div class="container">
+        <br><br>
+        <p class="link1" >Link 1</p><br><br><br>
+        <p class="link2" >Link 2</p>
+    </div>
+
+
+</body>
+
+<script>
+    let elem = document.getElementsByTagName("p")
+    for(let i = 0 ; i<elem.length ; i++){
+        elem[i].style.backgroundColor = "#ffffff"
+        elem[i].style.padding = "8px"
+        elem[i].style.borderRadius="10px"
+        elem[i].style.verticalAlign = "top"
+      }
+
+
+
+</script>
+<script src="../propagation.js"></script>
+</html>
+
