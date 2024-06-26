@@ -24,6 +24,9 @@ mybool = 0
 mybool ===1 ? capturing() : bubbling();
 
 
+//stoping propagation with event.stopPropagation stops the event from moving so prevents both bubbling and capturing!
+
+
 function containerEvent(bool_val=false){
     div_container.addEventListener("click",
     (event)=>{
