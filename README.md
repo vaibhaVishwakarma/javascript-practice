@@ -62,8 +62,7 @@ function pause() {
 }
 btnStart.addEventListener('click', startEvent, false);
 btnStop.addEventListener('click', pause, false);
-```
-  
+
   
 });
 
