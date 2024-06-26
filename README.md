@@ -1,4 +1,4 @@
-##project 4 
+## project 4 
 ```javascript
 const submit = document.querySelector('.guessSubmit');
 const allInputs = []
@@ -34,7 +34,35 @@ submit.addEventListener('click', (e) => {
   }
   else {console.log("invalid input")}
 
+## project 6
+```javascript
+const btnStart = document.querySelector('#start');
+const btnStop = document.querySelector('#stop');
+let eventInterval = undefined;
+function change() {
+  let color = '#';
+  const hex = '0123456789abcdef';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.ceil(Math.random() * 15)];
+  }
+  document.body.style.backgroundColor = color;
+  return;
+}
 
+function startEvent(event) {
+  //also prevents creation of multiple events
+  eventInterval = eventInterval ?? setInterval(change, 1000);
+  event.stopPropagation();
+  return;
+}
+function pause() {
+  clearInterval(eventInterval);
+  eventInterval = undefined;
+  return;
+}
+btnStart.addEventListener('click', startEvent, false);
+btnStop.addEventListener('click', pause, false);
+```
   
   
 });
