@@ -33,7 +33,7 @@ submit.addEventListener('click', (e) => {
 
   }
   else {console.log("invalid input")}
-
+```
 ## project 6
 ```javascript
 const btnStart = document.querySelector('#start');
